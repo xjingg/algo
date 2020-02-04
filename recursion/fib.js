@@ -58,3 +58,19 @@ const memory = function(fn){
 }
 
 fib = memory(fib);
+
+求nth fib
+
+function fib( n ) {
+    let fibCurrent = 1;
+    let fibLast = 0;  
+
+    if ( n < 0 ) return NaN;
+    if ( n <= 1 ) return n; 
+
+    for ( let fibIndex = 1; fibIndex < n; ++fibIndex ) {
+         [fibCurrent, fibLast] = [fibCurrent + fibLast, fibCurrent];
+    }
+
+    return fibCurrent;
+} 

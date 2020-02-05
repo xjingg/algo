@@ -1,3 +1,6 @@
+
+let arr=[1,4,3,2];
+
 function bubbleSort(array){
   let swapped = false;
   do{
@@ -15,3 +18,5 @@ function bubbleSort(array){
       return array;
   }
 }
+
+bubbleSort(arr);
